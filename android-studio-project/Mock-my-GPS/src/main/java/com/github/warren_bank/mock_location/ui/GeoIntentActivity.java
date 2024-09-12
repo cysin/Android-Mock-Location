@@ -17,15 +17,15 @@ import android.content.Intent;
 import android.os.Bundle;
 
 public class GeoIntentActivity extends Activity {
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         onNewIntent(getIntent());
-	}
+    }
 
-	@Override
-	protected void onNewIntent(Intent intent) {
+    @Override
+    protected void onNewIntent(Intent intent) {
         if (intent == null) {
             handleNoData(null);
             return;

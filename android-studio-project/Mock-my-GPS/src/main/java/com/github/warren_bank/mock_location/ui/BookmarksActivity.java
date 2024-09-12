@@ -70,8 +70,8 @@ public class BookmarksActivity extends Activity {
         onNewIntent(getIntent());
     }
 
-	@Override
-	protected void onNewIntent(Intent intent) {
+    @Override
+    protected void onNewIntent(Intent intent) {
         if (intent == null)
             return;
 
