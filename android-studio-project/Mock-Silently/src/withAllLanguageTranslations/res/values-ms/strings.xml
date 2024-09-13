@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dihiris</string>
+    <string name="pref_settings_title">Tetapan</string>
+    <string name="pref_purpose_array_names_1">kedudukan tetap</string>
+    <string name="pref_purpose_array_names_2">destinasi perjalanan</string>
+    <string name="pref_purpose_title">Tujuan</string>
+    <string name="pref_purpose_summary">pilih tujuan..</string>
+    <string name="pref_trip_duration_seconds_title">Tempoh Perjalanan (saat).</string>
+    <string name="pref_trip_duration_seconds_summary">Bilangan saat untuk simulasi perjalanan untuk dijalankan sebelum mencapai destinasi:</string>
+</resources>

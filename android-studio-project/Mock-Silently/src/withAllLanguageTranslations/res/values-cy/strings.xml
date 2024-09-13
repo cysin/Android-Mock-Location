@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ffug Silog</string>
+    <string name="pref_settings_title">Gosodiadau</string>
+    <string name="pref_purpose_array_names_1">safle sefydlog</string>
+    <string name="pref_purpose_array_names_2">cyrchfan taith</string>
+    <string name="pref_purpose_title">Pwrpas</string>
+    <string name="pref_purpose_summary">dewis pwrpas..</string>
+    <string name="pref_trip_duration_seconds_title">Hydred (eiliadau)).</string>
+    <string name="pref_trip_duration_seconds_summary">Nifer o eiliadau ar gyfer taith i redeg cyn cyrraedd y gyrchfan:</string>
+</resources>

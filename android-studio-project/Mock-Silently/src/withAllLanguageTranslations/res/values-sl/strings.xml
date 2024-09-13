@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zasmešita tiho</string>
+    <string name="pref_settings_title">Nastavitve</string>
+    <string name="pref_purpose_array_names_1">nespremenno mesto</string>
+    <string name="pref_purpose_array_names_2">cilj potovanja</string>
+    <string name="pref_purpose_title">Namen</string>
+    <string name="pref_purpose_summary">izberi namen..</string>
+    <string name="pref_trip_duration_seconds_title">Trajanje Potovanja (sekund).</string>
+    <string name="pref_trip_duration_seconds_summary">Število sekund za simulacijo potovanja, ki se izvede pred dosego cilja:</string>
+</resources>

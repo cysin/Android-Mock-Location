@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bespot Silently</string>
+    <string name="pref_settings_title">Instellingen</string>
+    <string name="pref_purpose_array_names_1">vaste positie</string>
+    <string name="pref_purpose_array_names_2">reisbestemming</string>
+    <string name="pref_purpose_title">Doel</string>
+    <string name="pref_purpose_summary">functie kiezen..</string>
+    <string name="pref_trip_duration_seconds_title">Duur van de reis (seconden).</string>
+    <string name="pref_trip_duration_seconds_summary">Aantal seconden voor een reissimulatie die moet worden uitgevoerd voordat de bestemming wordt bereikt:</string>
+</resources>

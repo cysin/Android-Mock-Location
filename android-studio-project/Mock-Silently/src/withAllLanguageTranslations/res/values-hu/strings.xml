@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mock Silently</string>
+    <string name="pref_settings_title">Beállítások</string>
+    <string name="pref_purpose_array_names_1">Rögzített pozíció</string>
+    <string name="pref_purpose_array_names_2">Utazás célja</string>
+    <string name="pref_purpose_title">Cél</string>
+    <string name="pref_purpose_summary">Választás célja..</string>
+    <string name="pref_trip_duration_seconds_title">Utazás időtartama (másodperc)).</string>
+    <string name="pref_trip_duration_seconds_summary">A cél elérése előtt futtatandó útvonalszimuláció másodpercek száma:</string>
+</resources>

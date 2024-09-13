@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">मोक चुपचाप</string>
+    <string name="pref_settings_title">सेटिङ</string>
+    <string name="pref_purpose_array_names_1">स्थिर स्थिति</string>
+    <string name="pref_purpose_array_names_2">यात्रा गन्तव्य</string>
+    <string name="pref_purpose_title">उद्देश्य</string>
+    <string name="pref_purpose_summary">उद्देश्य छनौट गर्नुहोस्..</string>
+    <string name="pref_trip_duration_seconds_title">ट्रिप अवधि (सेकेन्ड).</string>
+    <string name="pref_trip_duration_seconds_summary">गन्तव्यमा पुग्नुअघि चलाउनका लागि यात्रा नक्कल गर्ने सेकेन्डको सङ्ख्या:</string>
+</resources>

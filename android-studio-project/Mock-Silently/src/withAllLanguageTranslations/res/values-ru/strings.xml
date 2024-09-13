@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Инсценировать в</string>
+    <string name="pref_settings_title">Параметры</string>
+    <string name="pref_purpose_array_names_1">фиксированное положение</string>
+    <string name="pref_purpose_array_names_2">пункт назначения поездки</string>
+    <string name="pref_purpose_title">Назначение</string>
+    <string name="pref_purpose_summary">выбрать назначение..</string>
+    <string name="pref_trip_duration_seconds_title">Продолжительность поездки (в секундах).</string>
+    <string name="pref_trip_duration_seconds_summary">Время (в секундах), в течение которого имитация рейса выполняется до достижения целевого объекта:</string>
+</resources>

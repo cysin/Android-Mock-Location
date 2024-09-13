@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">নীরব মোক</string>
+    <string name="pref_settings_title">সেটিংস</string>
+    <string name="pref_purpose_array_names_1">স্থির অবস্থান</string>
+    <string name="pref_purpose_array_names_2">ভ্রমণ গন্তব্য</string>
+    <string name="pref_purpose_title">উদ্দেশ্য</string>
+    <string name="pref_purpose_summary">উদ্দেশ্য বেছে নিন..</string>
+    <string name="pref_trip_duration_seconds_title">Trip Duration (সেকেন্ড).</string>
+    <string name="pref_trip_duration_seconds_summary">গন্তব্যে পৌঁছানোর আগে চালানোর জন্য একটি ট্রিপ সিমুলেশনের জন্য সেকেন্ডের সংখ্যা:</string>
+</resources>

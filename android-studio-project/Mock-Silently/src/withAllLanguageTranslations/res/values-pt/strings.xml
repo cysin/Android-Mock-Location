@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mock Silently</string>
+    <string name="pref_settings_title">Configurações</string>
+    <string name="pref_purpose_array_names_1">posição fixa</string>
+    <string name="pref_purpose_array_names_2">destino de viagem</string>
+    <string name="pref_purpose_title">Finalidade</string>
+    <string name="pref_purpose_summary">escolher propósito..</string>
+    <string name="pref_trip_duration_seconds_title">Duração Da Viagem (segundos).</string>
+    <string name="pref_trip_duration_seconds_summary">Número de segundos para um simulacro de viagem ser executado antes de chegar ao destino:</string>
+</resources>

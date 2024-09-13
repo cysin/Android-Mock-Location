@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">\"Mock Silly\"</string>
+    <string name="pref_settings_title">Iestatījumi</string>
+    <string name="pref_purpose_array_names_1">fiksēta pozīcija</string>
+    <string name="pref_purpose_array_names_2">brauciena galamērķis</string>
+    <string name="pref_purpose_title">Mērķis</string>
+    <string name="pref_purpose_summary">izvēlēties mērķi..</string>
+    <string name="pref_trip_duration_seconds_title">Ceļojuma ilgums (sekundes)).</string>
+    <string name="pref_trip_duration_seconds_summary">Sekunžu skaits attiecībā uz brauciena simulāciju, kas jāveic pirms mērķa sasniegšanas:</string>
+</resources>

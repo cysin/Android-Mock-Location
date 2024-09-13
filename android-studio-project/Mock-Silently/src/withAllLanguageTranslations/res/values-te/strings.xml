@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">నిరంతరంగా మ్యాక్</string>
+    <string name="pref_settings_title">అమరిక</string>
+    <string name="pref_purpose_array_names_1">నిర్దిష్ట స్థానం</string>
+    <string name="pref_purpose_array_names_2">పర్యటన గమ్యం</string>
+    <string name="pref_purpose_title">పురస్కారాలు</string>
+    <string name="pref_purpose_summary">ప్రయోజనం..</string>
+    <string name="pref_trip_duration_seconds_title">త్రిప్లేషన్ (సెకనులు).</string>
+    <string name="pref_trip_duration_seconds_summary">ట్రిప్ సిమ్యులేషన్ కోసం సెకనుల సంఖ్య గమ్యం చేరుటకు ముందు నడుపుటకు:</string>
+</resources>

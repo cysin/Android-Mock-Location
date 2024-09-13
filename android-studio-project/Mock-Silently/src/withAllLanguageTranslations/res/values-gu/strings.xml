@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">શાંત રીતે તાળું મારો</string>
+    <string name="pref_settings_title">સુયોજનો</string>
+    <string name="pref_purpose_array_names_1">ચોક્કસ સ્થાન</string>
+    <string name="pref_purpose_array_names_2">લક્ષ્ય લક્ષ્ય</string>
+    <string name="pref_purpose_title">પુરાવો</string>
+    <string name="pref_purpose_summary">પસંદ કરવાનું પસંદ કરો..</string>
+    <string name="pref_trip_duration_seconds_title">Trip Duration (સેકંડો).</string>
+    <string name="pref_trip_duration_seconds_summary">લક્ષ્ય સુધી પહોંચવા પહેલાં ચલાવવા માટે પ્રવાસ સિમ્યુલેશન માટે સેકન્ડોની સંખ્યા:</string>
+</resources>

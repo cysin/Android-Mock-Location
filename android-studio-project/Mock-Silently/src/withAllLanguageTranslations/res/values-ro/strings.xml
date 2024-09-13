@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bate joc de Silent</string>
+    <string name="pref_settings_title">Setări</string>
+    <string name="pref_purpose_array_names_1">poziție fixă</string>
+    <string name="pref_purpose_array_names_2">destinație de călătorie</string>
+    <string name="pref_purpose_title">Scop</string>
+    <string name="pref_purpose_summary">alege scopul..</string>
+    <string name="pref_trip_duration_seconds_title">Durata călătoriei (secunde).</string>
+    <string name="pref_trip_duration_seconds_summary">Numărul de secunde pentru o simulare de călătorie pentru a rula înainte de a ajunge la destinație:</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">चुपचाप नकली</string>
+    <string name="pref_settings_title">विन्यास</string>
+    <string name="pref_purpose_array_names_1">नियत स्थान</string>
+    <string name="pref_purpose_array_names_2">यात्रा स्थल</string>
+    <string name="pref_purpose_title">उद्देश्य</string>
+    <string name="pref_purpose_summary">प्रयोजन..</string>
+    <string name="pref_trip_duration_seconds_title">यात्रा अवधि (सेकंड).</string>
+    <string name="pref_trip_duration_seconds_summary">गंतव्य तक पहुँचने से पहले एक यात्रा अनुकार के लिए सेकेंड की संख्या:</string>
+</resources>

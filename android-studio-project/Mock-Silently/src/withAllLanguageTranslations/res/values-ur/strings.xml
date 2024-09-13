@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">موک سلو</string>
+    <string name="pref_settings_title">سیٹنگز</string>
+    <string name="pref_purpose_array_names_1">مقررہ مقام</string>
+    <string name="pref_purpose_array_names_2">سفر کی منزل</string>
+    <string name="pref_purpose_title">Purpose</string>
+    <string name="pref_purpose_summary">ادیشیہ چنیں..</string>
+    <string name="pref_trip_duration_seconds_title">ترپ دورانیہ (سیکنڈ)).</string>
+    <string name="pref_trip_duration_seconds_summary">ایک سفر نقلی کے لئے سیکنڈ کی تعداد منزل تک پہنچنے سے پہلے چلانے کے لئے:</string>
+</resources>

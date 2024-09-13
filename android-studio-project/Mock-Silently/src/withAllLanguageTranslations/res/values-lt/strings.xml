@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mock Silently</string>
+    <string name="pref_settings_title">Nustatymai</string>
+    <string name="pref_purpose_array_names_1">Fiksuota pozicija</string>
+    <string name="pref_purpose_array_names_2">reiso paskirties vieta</string>
+    <string name="pref_purpose_title">2 straipsnis</string>
+    <string name="pref_purpose_summary">Pasirinkite paskirtį..</string>
+    <string name="pref_trip_duration_seconds_title">Reiso trukmė (sekundės)).</string>
+    <string name="pref_trip_duration_seconds_summary">Kelių sekundžių, kai imitavimas atliekamas prieš pasiekiant paskirties vietą, skaičius:</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тихо ругај</string>
+    <string name="pref_settings_title">Поставке</string>
+    <string name="pref_purpose_array_names_1">фиксирана позиција</string>
+    <string name="pref_purpose_array_names_2">одредиште путовања</string>
+    <string name="pref_purpose_title">Сврха</string>
+    <string name="pref_purpose_summary">изаберите сврху..</string>
+    <string name="pref_trip_duration_seconds_title">Трајање путовања (секунде).</string>
+    <string name="pref_trip_duration_seconds_summary">Број секунди за симулацију пута за покретање пре него што стигнемо до одредишта:</string>
+</resources>

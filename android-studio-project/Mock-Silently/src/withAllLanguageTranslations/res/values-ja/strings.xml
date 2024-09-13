@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">モック・サイレント</string>
+    <string name="pref_settings_title">設定</string>
+    <string name="pref_purpose_array_names_1">固定位置</string>
+    <string name="pref_purpose_array_names_2">移動宛先</string>
+    <string name="pref_purpose_title">目的</string>
+    <string name="pref_purpose_summary">目的を選ぶ..</string>
+    <string name="pref_trip_duration_seconds_title">トリップ期間 (秒 )).</string>
+    <string name="pref_trip_duration_seconds_summary">移動のシミュレーションが宛先に到達するまでに実行する秒数:</string>
+</resources>

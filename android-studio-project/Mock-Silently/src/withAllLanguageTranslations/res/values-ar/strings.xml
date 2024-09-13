@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">جورب بصمت</string>
+    <string name="pref_settings_title">المحددات</string>
+    <string name="pref_purpose_array_names_1">موضع ثابت</string>
+    <string name="pref_purpose_array_names_2">وجهة الرحلة</string>
+    <string name="pref_purpose_title">الغرض</string>
+    <string name="pref_purpose_summary">اختيار الغرض..</string>
+    <string name="pref_trip_duration_seconds_title">مدة الرحلة (ثواني).</string>
+    <string name="pref_trip_duration_seconds_summary">عدد الثواني لمحاكاة الرحلة ليتم تشغيلها قبل الوصول الى الوجهة المستهدفة:</string>
+</resources>

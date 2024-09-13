@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">നിശബ്ദമായി മാക്ക്</string>
+    <string name="pref_settings_title">സജ്ജീകരണങ്ങള്</string>
+    <string name="pref_purpose_array_names_1">സ്ഥിരമായ സ്ഥാനം</string>
+    <string name="pref_purpose_array_names_2">യാത്ര ലക്ഷ്യസ്ഥാനം</string>
+    <string name="pref_purpose_title">പുരോഹിതം</string>
+    <string name="pref_purpose_summary">തെരഞ്ഞെടുക്കുക..</string>
+    <string name="pref_trip_duration_seconds_title">ട്രിപ് ഡുറേഷന് (സെക്കന്ഡുകള്).</string>
+    <string name="pref_trip_duration_seconds_summary">ലക്ഷ്യത്തിലെത്തുന്നതിനുമുമ്പ് ഓടുന്നതിനായി ഒരു യാത്ര സിമുലേഷനുള്ള സെക്കന്റിന്റെ എണ്ണം:</string>
+</resources>

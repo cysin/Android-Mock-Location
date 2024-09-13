@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Irvita vaikselt</string>
+    <string name="pref_settings_title">Seadistused</string>
+    <string name="pref_purpose_array_names_1">fikseeritud asend</string>
+    <string name="pref_purpose_array_names_2">reisi sihtkoht</string>
+    <string name="pref_purpose_title">Eesmärk</string>
+    <string name="pref_purpose_summary">Vali otstarve..</string>
+    <string name="pref_trip_duration_seconds_title">Reisi kestus (sekundites)).</string>
+    <string name="pref_trip_duration_seconds_summary">Sekundite arv reisi simuleerimiseks enne sihtkohta jõudmist:</string>
+</resources>

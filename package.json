@@ -12,6 +12,9 @@
     "translate:nlp":       "translate-android-strings -i \"en\" -f \"android-studio-project/Mock-my-GPS-UnifiedNlp-Backend/src/main/res/values/strings.xml\" -d \"android-studio-project/Mock-my-GPS-UnifiedNlp-Backend/src/withAllLanguageTranslations/res\" -m --na --nc --nw -b \"(?:GPS|\\(ms\\)|UnifiedNlp)\"",
     "translate:nlp:debug": "npm run translate:nlp -- -o \"en\" --debug",
 
-    "translate":           "npm run translate:app && npm run translate:nlp"
+    "translate:shh":       "translate-android-strings -i \"en\" -f \"android-studio-project/Mock-Silently/src/main/res/values/strings.xml\" -d \"android-studio-project/Mock-Silently/src/withAllLanguageTranslations/res\" -m --na --nc --nw",
+    "translate:shh:debug": "npm run translate:shh -- -o \"en\" --debug",
+
+    "translate":           "npm run translate:app && npm run translate:nlp && npm run translate:shh"
   }
 }

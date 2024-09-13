@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nemocně ztlumit</string>
+    <string name="pref_settings_title">NastaveníComment</string>
+    <string name="pref_purpose_array_names_1">pevná pozice</string>
+    <string name="pref_purpose_array_names_2">cíl cesty</string>
+    <string name="pref_purpose_title">Účel</string>
+    <string name="pref_purpose_summary">zvolit účel..</string>
+    <string name="pref_trip_duration_seconds_title">Doba trvání cesty (sekundy).</string>
+    <string name="pref_trip_duration_seconds_summary">Počet sekund, než se má simulace cesty spustit před dosažením cíle:</string>
+</resources>

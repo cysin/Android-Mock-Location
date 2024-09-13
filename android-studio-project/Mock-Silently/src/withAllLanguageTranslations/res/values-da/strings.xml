@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mock Silent</string>
+    <string name="pref_settings_title">Indstillinger</string>
+    <string name="pref_purpose_array_names_1">fast position</string>
+    <string name="pref_purpose_array_names_2">rejsemål</string>
+    <string name="pref_purpose_title">Formål</string>
+    <string name="pref_purpose_summary">vælg formål..</string>
+    <string name="pref_trip_duration_seconds_title">Varighed af trip (sekunder).</string>
+    <string name="pref_trip_duration_seconds_summary">Antal sekunder for en tur-simulering, der skal udføres, før du når destinationen:</string>
+</resources>
