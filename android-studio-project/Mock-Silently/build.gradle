@@ -1,0 +1,66 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility project.ext.javaVersion
+        targetCompatibility project.ext.javaVersion
+    }
+
+    defaultConfig {
+        targetSdkVersion project.ext.targetSdkVersion
+
+        applicationId "com.github.warren_bank.mock_location.silently"
+        minSdkVersion project.ext.shh_minSdkVersion
+        versionCode   project.ext.shh_releaseVersionCode
+        versionName   project.ext.shh_releaseVersion
+
+        archivesBaseName += "-$versionName"
+    }
+
+    flavorDimensions "languageResources"
+
+    productFlavors {
+        withAllLanguageTranslations {
+            dimension "languageResources"
+        }
+        english {
+            dimension "languageResources"
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable      false
+            jniDebuggable   false
+            minifyEnabled   true
+            shrinkResources true
+            proguardFiles = [
+                "proguard-rules.txt",
+                getDefaultProguardFile('proguard-android.txt')
+            ]
+        }
+        debug {
+            debuggable      true
+            jniDebuggable   true
+            minifyEnabled   false
+            shrinkResources false
+        }
+    }
+
+    dependenciesInfo {
+        includeInApk    = false  // Disables dependency metadata when building APKs.
+        includeInBundle = false  // Disables dependency metadata when building Android App Bundles.
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError true
+    }
+}
+
+dependencies {
+}

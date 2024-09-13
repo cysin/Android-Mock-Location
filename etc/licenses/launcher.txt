@@ -3,3 +3,10 @@ from: https://pixabay.com/illustrations/gps-color-locator-map-online-2845363/
 note: Pixabay License:
       - Free for commercial use
       - No attribution required
+
+file: android-studio-project/Mock-Silently/src/main/res/drawable/launcher.png
+from: https://www.flaticon.com/free-icon/mocking_1933622
+note: Flaticon License:
+      - Free for personal and commercial purpose with attribution.
+      - Paste this link on the website where your app is available for download:
+          https://www.flaticon.com/free-icons/mocking

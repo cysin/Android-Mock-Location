@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Mock Silently</string>
+
+    <!-- ================= -->
+    <!-- Settings strings. -->
+    <!-- ================= -->
+
+    <string name="pref_settings_title">Settings</string>
+
+    <!-- Settings: purpose -->
+    <string name="pref_purpose_array_names_1">fixed position</string>
+    <string name="pref_purpose_array_names_2">trip destination</string>
+
+    <string translatable="false" name="pref_purpose_array_values_1">1</string>
+    <string translatable="false" name="pref_purpose_array_values_2">3</string>
+
+    <string-array name="pref_purpose_array_names">
+        <item>@string/pref_purpose_array_names_1</item>
+        <item>@string/pref_purpose_array_names_2</item>
+    </string-array>
+
+    <string-array name="pref_purpose_array_values">
+        <item>@string/pref_purpose_array_values_1</item>
+        <item>@string/pref_purpose_array_values_2</item>
+    </string-array>
+
+    <string translatable="false" name="pref_purpose_key">pref_purpose</string>
+    <string translatable="false" name="pref_purpose_default">@string/pref_purpose_array_values_1</string>
+    <string name="pref_purpose_title">Purpose</string>
+    <string name="pref_purpose_summary">choose purpose..</string>
+
+    <!-- Settings: trip_duration_seconds -->
+    <string translatable="false" name="pref_trip_duration_seconds_key">pref_trip_duration_seconds</string>
+    <string name="pref_trip_duration_seconds_title">Trip Duration (seconds).</string>
+    <string name="pref_trip_duration_seconds_summary">Number of seconds for a trip simulation to run before reaching the destination:</string>
+    <string translatable="false" name="pref_trip_duration_seconds_default">60</string>
+
+</resources>

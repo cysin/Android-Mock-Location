@@ -106,7 +106,7 @@ __other enhancements__:
 
 #### Comparison of [release](https://github.com/warren-bank/Android-Mock-Location/releases) APK variations
 
-* `Mock-my-GPS` vs. `Mock-my-GPS-UnifiedNlp-Backend`
+* `Mock-my-GPS` vs. `Mock-my-GPS-UnifiedNlp-Backend` vs. `Mock-Silently`
   - `Mock-my-GPS`
     * installation is required
     * minimum supported version of Android: 1.5 (Cupcake, API 3)
@@ -124,6 +124,20 @@ __other enhancements__:
         * this causes `UnifiedNlp` to prioritize the mocked location data, and to effectively ignore location data updates provided by all other backend plugins
     * for more info, refer to:
       - [XDA forum](https://forum.xda-developers.com/t/app-unifiednlp-floss-wi-fi-and-cell-tower-based-geolocation.2991544/)
+  - `Mock-Silently`
+    * installation is optional
+    * minimum supported version of Android: 1.0 (API 1)
+    * standalone application
+    * purpose:
+      - to intercept implicit geo-Intents that originate from 3rd-party software, and cannot be directly configured to include custom extras
+    * behavior:
+      - add pre-configured values for custom extras to intercepted geo-Intents
+      - make the updated geo-Intent explicit to open in `Mock-my-GPS`
+      - start the updated geo-Intent
+      - finish without ever showing any visible UI
+    * recommendation:
+      - while using 3rd-party software to share locations with `Mock-my-GPS` through implicit geo-Intents, make this the default app to handle implicit geo-Intents
+      - when done, revoke this Android setting to re-enable the Activity chooser
 * `english` vs. `withAllLanguageTranslations`
   - `english`
     * does not include translated string resources for any other languages
@@ -185,7 +199,7 @@ __Example__:
      * Action = `android.intent.action.VIEW`
      * Package Name = `com.github.warren_bank.mock_location`
      * Class Name = `com.github.warren_bank.mock_location.ui.GeoIntentActivity`
-     * Date URI = `geo:40.78290,-73.96567`
+     * Data URI = `geo:40.78290,-73.96567`
      * Extras:
        1. Name = `purpose`
           - Type of Value = `int`
@@ -198,7 +212,7 @@ __Example__:
      * Action = `android.intent.action.VIEW`
      * Package Name = `com.github.warren_bank.mock_location`
      * Class Name = `com.github.warren_bank.mock_location.ui.GeoIntentActivity`
-     * Date URI = `geo:37.76914,-122.48301`
+     * Data URI = `geo:37.76914,-122.48301`
      * Extras:
        1. Name = `purpose`
           - Type of Value = `int`

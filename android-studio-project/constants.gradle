@@ -22,4 +22,8 @@ project.ext {
     nlp_minSdkVersion           = 9
     nlp_releaseVersionCode      = project.ext.base_releaseVersionCode + project.ext.nlp_minSdkVersion
     nlp_releaseVersion          = String.format("%s-%02dAPI", project.ext.base_releaseVersion, project.ext.nlp_minSdkVersion)
+
+    shh_minSdkVersion           = 1
+    shh_releaseVersionCode      = project.ext.base_releaseVersionCode + project.ext.shh_minSdkVersion
+    shh_releaseVersion          = String.format("%s-%02dAPI", project.ext.base_releaseVersion, project.ext.shh_minSdkVersion)
 }

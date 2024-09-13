@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_settings_title">
+
+        <ListPreference
+            android:key="@string/pref_purpose_key"
+            android:title="@string/pref_purpose_title"
+            android:summary="@string/pref_purpose_summary"
+            android:entries="@array/pref_purpose_array_names"
+            android:entryValues="@array/pref_purpose_array_values"
+            android:defaultValue="@string/pref_purpose_default" />
+
+        <EditTextPreference
+            android:key="@string/pref_trip_duration_seconds_key"
+            android:title="@string/pref_trip_duration_seconds_title"
+            android:dialogTitle="@string/pref_trip_duration_seconds_summary"
+            android:summary="@string/pref_trip_duration_seconds_summary"
+            android:inputType="number"
+            android:defaultValue="@string/pref_trip_duration_seconds_default" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
