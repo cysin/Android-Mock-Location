@@ -30,29 +30,19 @@ public class LocationService extends Service {
     private final static String EXTRA_TRIP_DURATION   = "TRIP_DURATION";
 
     private static boolean running = false;
-
-    private IBinder locationBinder;
-    private LocationThreadManager LTM;
-
-    public class LocationBinder extends Binder {
-        LocationService getService() {
-            return LocationService.this;
-        }
-    }
+    private static LocationThreadManager LTM = null;
 
     @Override
     public void onCreate() {
         LTM = LocationThreadManager.get();
         LTM.init(LocationService.this);
 
-        locationBinder = new LocationBinder();
-
         showNotification();
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        return locationBinder;
+        return null;
     }
 
     @Override
@@ -296,13 +286,7 @@ public class LocationService extends Service {
         return running;
     }
 
-    // -------------------------------------------------------------------------
-    // API for Activities that bind to Service
-    //
-    // STATUS: none of the Activities currently need to bind to this Service
-    // TO DO?: remove `LocationBinder` class, `locationBinder` instance, `getLocationThreadManager()` method, and update `onBind()` to return `null`
-
-    public LocationThreadManager getLocationThreadManager() {
+    public static LocationThreadManager getLocationThreadManager() {
         return LTM;
     }
 

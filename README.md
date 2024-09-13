@@ -154,6 +154,64 @@ __other enhancements__:
 
 - - - -
 
+#### Intents
+
+* _Latitude_ and _Longitude_ coordinates are extracted from each Geo-Intent
+* the default behavior of the app is to then:
+  - display a Dialog to ask the intended "purpose" for the location coordinate extracted from the Geo-Intent
+  - display an Activity to allow the user to apply any relevant configuration for the intended "purpose" before starting or updating the Service
+* Extras in the Intent can be used to streamline this behavior:
+  - (integer) `purpose`
+    * `1` = fixed position
+    * `2` = trip origin
+    * `3` = trip destination
+    * `4` = new bookmark
+  - (boolean) `silent_update`
+    * only works in combination with:
+      - `purpose` having a value of either: `1` or `3`
+    * default: _FALSE_
+  - (integer) `trip_duration_seconds`
+    * only works in combination with:
+      - `purpose` having a value of: `3`
+      - `silent_update` having a value of: _TRUE_
+    * default: `60`
+
+__Example__:
+
+* using the app: [`Bookmarks`](https://github.com/warren-bank/Android-Bookmarks)
+* Intent configurations:
+  1. fixed position
+     * Name = `(fixed position) New York City: Central Park`
+     * Action = `android.intent.action.VIEW`
+     * Package Name = `com.github.warren_bank.mock_location`
+     * Class Name = `com.github.warren_bank.mock_location.ui.GeoIntentActivity`
+     * Date URI = `geo:40.78290,-73.96567`
+     * Extras:
+       1. Name = `purpose`
+          - Type of Value = `int`
+          - Value = `1`
+       2. Name = `silent_update`
+          - Type of Value = `boolean`
+          - Value = `TRUE`
+  2. trip destination
+     * Name = `(trip destination) San Francisco: Golden Gate Park`
+     * Action = `android.intent.action.VIEW`
+     * Package Name = `com.github.warren_bank.mock_location`
+     * Class Name = `com.github.warren_bank.mock_location.ui.GeoIntentActivity`
+     * Date URI = `geo:37.76914,-122.48301`
+     * Extras:
+       1. Name = `purpose`
+          - Type of Value = `int`
+          - Value = `3`
+       2. Name = `silent_update`
+          - Type of Value = `boolean`
+          - Value = `TRUE`
+       3. Name = `trip_duration_seconds`
+          - Type of Value = `int`
+          - Value = `3000`
+
+- - - -
+
 #### Legal:
 
 * copyright: [Warren Bank](https://github.com/warren-bank)

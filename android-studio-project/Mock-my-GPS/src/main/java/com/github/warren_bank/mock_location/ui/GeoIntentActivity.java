@@ -6,6 +6,7 @@ package com.github.warren_bank.mock_location.ui;
 import com.github.warren_bank.mock_location.R;
 import com.github.warren_bank.mock_location.data_model.LocPoint;
 import com.github.warren_bank.mock_location.data_model.SharedPrefs;
+import com.github.warren_bank.mock_location.service.LocationService;
 import com.github.warren_bank.mock_location.util.GeoPointParserUtil;
 import com.github.warren_bank.mock_location.util.GeoPointParserUtil.GeoParsedPoint;
 
@@ -17,6 +18,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 public class GeoIntentActivity extends Activity {
+    private final static String EXTRA_PURPOSE               = "purpose";
+    private final static String EXTRA_SILENT_UPDATE         = "silent_update";
+    private final static String EXTRA_TRIP_DURATION_SECONDS = "trip_duration_seconds";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +58,16 @@ public class GeoIntentActivity extends Activity {
             geoPoint.getLongitude()
         );
 
-        handleGeoData(point);
+        boolean handled = false;
+        if (intent.hasExtra(EXTRA_PURPOSE)) {
+            int purpose               = intent.getIntExtra(EXTRA_PURPOSE, 0);
+            boolean silent_update     = intent.getBooleanExtra(EXTRA_SILENT_UPDATE, false);
+            int trip_duration_seconds = intent.getIntExtra(EXTRA_TRIP_DURATION_SECONDS, 60);
+            handled = handleGeoDataPurpose(point, purpose, silent_update, trip_duration_seconds);
+        }
+
+        if (!handled)
+            handleGeoData(point);
     }
 
     private void handleNoData(String error_message) {
@@ -66,37 +80,48 @@ public class GeoIntentActivity extends Activity {
         builder.setItems(R.array.geo_intent_menu_options, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                switch (which + 1) {
-                    case 1:
-                        // fixed position
-                        dialog.dismiss();
-                        handleFixedPosition(point);
-                        break;
-                    case 2:
-                        // trip origin
-                        dialog.dismiss();
-                        handleTripOrigin(point);
-                        break;
-                    case 3:
-                        // trip destination
-                        dialog.dismiss();
-                        handleTripDestination(point);
-                        break;
-                    case 4:
-                        // new bookmark
-                        dialog.dismiss();
-                        handleNewBookmark(point);
-                        break;
-                  /*
-                    default:
-                        dialog.cancel();
-                        handleNoData(null);
-                        break;
-                  */
-                }
+                int purpose = which + 1;
+                boolean handled = handleGeoDataPurpose(point, purpose, false, 0);
+
+                if (handled)
+                  dialog.dismiss();
             }
         });
         builder.show();
+    }
+
+    private boolean handleGeoDataPurpose(LocPoint point, int purpose, boolean silent_update, int trip_duration_seconds) {
+        switch (purpose) {
+            case 1:
+                // fixed position
+                if (silent_update && LocationService.isStarted()) {
+                  LocationService.getLocationThreadManager().jumpToLocation(point);
+                  finish();
+                }
+                else {
+                  handleFixedPosition(point);
+                }
+                return true;
+            case 2:
+                // trip origin
+                handleTripOrigin(point);
+                return true;
+            case 3:
+                // trip destination
+                if (silent_update && LocationService.isStarted()) {
+                  LocationService.getLocationThreadManager().flyToLocation(point, trip_duration_seconds);
+                  finish();
+                }
+                else {
+                  handleTripDestination(point);
+                }
+                return true;
+            case 4:
+                // new bookmark
+                handleNewBookmark(point);
+                return true;
+        }
+        return false;
     }
 
     private void handleFixedPosition(LocPoint point) {
