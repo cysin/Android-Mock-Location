@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Zasmešita tiho</string>
     <string name="pref_settings_title">Nastavitve</string>
-    <string name="pref_purpose_array_names_1">nespremenno mesto</string>
-    <string name="pref_purpose_array_names_2">cilj potovanja</string>
+    <string name="pref_purpose_array_names_1">Fiksno mesto</string>
+    <string name="pref_purpose_array_names_2">Cilj Potovanja</string>
     <string name="pref_purpose_title">Namen</string>
     <string name="pref_purpose_summary">izberi namen..</string>
+    <string name="pref_force_start_title">Prisilni zagon</string>
+    <string name="pref_force_start_summary_on" >Tiho zaženite storitev za mokanje.</string>
+    <string name="pref_force_start_summary_off">Odprite aplikacijo, da ročno zaženete storitev za mokanje.</string>
     <string name="pref_trip_duration_seconds_title">Trajanje Potovanja (sekund).</string>
     <string name="pref_trip_duration_seconds_summary">Število sekund za simulacijo potovanja, ki se izvede pred dosego cilja:</string>
 </resources>

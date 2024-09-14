@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Mock SildiName</string>
     <string name="pref_settings_title">Socruithe</string>
-    <string name="pref_purpose_array_names_1">suíomh seasta</string>
-    <string name="pref_purpose_array_names_2">Ceann scríbe</string>
+    <string name="pref_purpose_array_names_1">Ionad Seasta</string>
+    <string name="pref_purpose_array_names_2">Sprioc Trip</string>
     <string name="pref_purpose_title">Cuspóir</string>
     <string name="pref_purpose_summary">roghnaigh an cuspóir..</string>
+    <string name="pref_force_start_title">Tús Curtha</string>
+    <string name="pref_force_start_summary_on" >Tosaigh tús na seirbhíse mocking a thosú.</string>
+    <string name="pref_force_start_summary_off">Oscail an app chun tús a chur de láimh an tseirbhís mocking.</string>
     <string name="pref_trip_duration_seconds_title">Fad Trip (soicindí)).</string>
     <string name="pref_trip_duration_seconds_summary">Líon na soicindí le haghaidh an simulation trip a reáchtáil roimh an ceann scríbe:</string>
 </resources>

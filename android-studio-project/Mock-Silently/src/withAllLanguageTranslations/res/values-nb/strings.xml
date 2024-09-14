@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Mock Silelt</string>
     <string name="pref_settings_title">Innstillinger</string>
-    <string name="pref_purpose_array_names_1">fast stilling</string>
-    <string name="pref_purpose_array_names_2">reisemål</string>
+    <string name="pref_purpose_array_names_1">Fast stilling</string>
+    <string name="pref_purpose_array_names_2">Reisemål</string>
     <string name="pref_purpose_title">Formål</string>
     <string name="pref_purpose_summary">velge formål..</string>
+    <string name="pref_force_start_title">Tvungen start</string>
+    <string name="pref_force_start_summary_on" >Stille oppstart av mottjenesten.</string>
+    <string name="pref_force_start_summary_off">Åpne appen for å manuelt starte spottjenesten.</string>
     <string name="pref_trip_duration_seconds_title">Reisevarighet (sekunder).</string>
     <string name="pref_trip_duration_seconds_summary">Antall sekunder for en tursimulering som skal kjøres før du når målet:</string>
 </resources>

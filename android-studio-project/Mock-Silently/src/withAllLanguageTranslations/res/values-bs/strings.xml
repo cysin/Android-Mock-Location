@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Tiho se rugaj,</string>
     <string name="pref_settings_title">Postavke</string>
-    <string name="pref_purpose_array_names_1">fiksna pozicija</string>
-    <string name="pref_purpose_array_names_2">odredište putovanja</string>
+    <string name="pref_purpose_array_names_1">Fiksni položaj</string>
+    <string name="pref_purpose_array_names_2">Odredište putovanja</string>
     <string name="pref_purpose_title">Svrha</string>
     <string name="pref_purpose_summary">izbor svrhe..</string>
+    <string name="pref_force_start_title">Forsiranje pokretanja</string>
+    <string name="pref_force_start_summary_on" >Tiho zapocni rugati servis.</string>
+    <string name="pref_force_start_summary_off">Otvorite aplikaciju da biste ručno pokrenuli rugu.</string>
     <string name="pref_trip_duration_seconds_title">Trajanje putovanja (sekunde).</string>
     <string name="pref_trip_duration_seconds_summary">Broj sekundi za simulaciju putovanja koja će se pokrenuti prije dolaska na odredište:</string>
 </resources>

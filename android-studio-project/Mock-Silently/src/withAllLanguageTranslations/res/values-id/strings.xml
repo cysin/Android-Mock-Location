@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Dasar Mengejek</string>
     <string name="pref_settings_title">Pengaturan</string>
-    <string name="pref_purpose_array_names_1">posisi tetap</string>
-    <string name="pref_purpose_array_names_2">Tujuan perjalanan</string>
+    <string name="pref_purpose_array_names_1">Posisi Tetap</string>
+    <string name="pref_purpose_array_names_2">Tujuan Perjalanan</string>
     <string name="pref_purpose_title">Tujuan</string>
     <string name="pref_purpose_summary">pilih tujuan..</string>
+    <string name="pref_force_start_title">Gaya Mulai</string>
+    <string name="pref_force_start_summary_on" >Diam-diam memulai layanan mengejek.</string>
+    <string name="pref_force_start_summary_off">Buka aplikasi untuk memulai layanan yang mengejek secara manual.</string>
     <string name="pref_trip_duration_seconds_title">Durasi Perjalanan (detik)).</string>
     <string name="pref_trip_duration_seconds_summary">Jumlah detik untuk simulasi perjalanan yang akan dijalankan sebelum mencapai tujuan:</string>
 </resources>

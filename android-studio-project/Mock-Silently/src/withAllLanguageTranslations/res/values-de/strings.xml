@@ -6,6 +6,9 @@
     <string name="pref_purpose_array_names_2">Reiseziel</string>
     <string name="pref_purpose_title">Zweck</string>
     <string name="pref_purpose_summary">Zweck auswählen..</string>
+    <string name="pref_force_start_title">Start erzwingen</string>
+    <string name="pref_force_start_summary_on" >Den Mocking-Service unbeaufsichtigt starten.</string>
+    <string name="pref_force_start_summary_off">Öffnen Sie die App, um den Mocking-Service manuell zu starten.</string>
     <string name="pref_trip_duration_seconds_title">Ausreisedauer (Sekunden)).</string>
     <string name="pref_trip_duration_seconds_summary">Anzahl der Sekunden für eine Fahrsimulation, die ausgeführt werden soll, bevor das Ziel erreicht wird.:</string>
 </resources>

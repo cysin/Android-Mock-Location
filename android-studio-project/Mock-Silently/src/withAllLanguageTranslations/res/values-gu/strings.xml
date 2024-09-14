@@ -3,9 +3,12 @@
     <string name="app_name">શાંત રીતે તાળું મારો</string>
     <string name="pref_settings_title">સુયોજનો</string>
     <string name="pref_purpose_array_names_1">ચોક્કસ સ્થાન</string>
-    <string name="pref_purpose_array_names_2">લક્ષ્ય લક્ષ્ય</string>
+    <string name="pref_purpose_array_names_2">ટ્રીપ લક્ષ્ય</string>
     <string name="pref_purpose_title">પુરાવો</string>
     <string name="pref_purpose_summary">પસંદ કરવાનું પસંદ કરો..</string>
+    <string name="pref_force_start_title">દબાણ શરૂઆત</string>
+    <string name="pref_force_start_summary_on" >શાંત રીતે મોક્કિંગ સેવા શરૂ કરો.</string>
+    <string name="pref_force_start_summary_off">Mocking સેવા માટે જાતે જ શરૂ કરવા માટે એપ ખોલો.</string>
     <string name="pref_trip_duration_seconds_title">Trip Duration (સેકંડો).</string>
     <string name="pref_trip_duration_seconds_summary">લક્ષ્ય સુધી પહોંચવા પહેલાં ચલાવવા માટે પ્રવાસ સિમ્યુલેશન માટે સેકન્ડોની સંખ્યા:</string>
 </resources>

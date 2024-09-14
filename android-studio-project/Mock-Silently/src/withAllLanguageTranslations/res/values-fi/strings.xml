@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Mock hiljaa</string>
     <string name="pref_settings_title">Asetukset</string>
-    <string name="pref_purpose_array_names_1">Kiinteä sijainti</string>
-    <string name="pref_purpose_array_names_2">Matkan kohde</string>
+    <string name="pref_purpose_array_names_1">Kiinteä asema</string>
+    <string name="pref_purpose_array_names_2">Trip-määräpaikka</string>
     <string name="pref_purpose_title">Tarkoitus</string>
     <string name="pref_purpose_summary">Valitse tarkoitus..</string>
+    <string name="pref_force_start_title">Voima alku</string>
+    <string name="pref_force_start_summary_on" >Aloittakaa leikkuupalvelu hiljaa.</string>
+    <string name="pref_force_start_summary_off">Avaa sovellus ja aloita mokkapalvelu manuaalisesti..</string>
     <string name="pref_trip_duration_seconds_title">Trip-kesto (sekuntia)).</string>
     <string name="pref_trip_duration_seconds_summary">Matkan simuloinnin sekunteina aika, joka on ajossa ennen kohteen saapumista:</string>
 </resources>

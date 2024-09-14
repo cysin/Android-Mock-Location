@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">Mock skiet</string>
     <string name="pref_settings_title">Settings</string>
-    <string name="pref_purpose_array_names_1">pożizzjoni fissa</string>
-    <string name="pref_purpose_array_names_2">destinazzjoni tal-vjaġġ</string>
+    <string name="pref_purpose_array_names_1">Pożizzjoni fissa</string>
+    <string name="pref_purpose_array_names_2">Destinazzjoni tal-vjaġġ</string>
     <string name="pref_purpose_title">Għan</string>
     <string name="pref_purpose_summary">jagħżlu skop..</string>
+    <string name="pref_force_start_title">Forza Bidu</string>
+    <string name="pref_force_start_summary_on" >Skiet jibda s-servizz mocking.</string>
+    <string name="pref_force_start_summary_off">Iftaħ l-app biex b\'mod manwali tibda s-servizz mocking.</string>
     <string name="pref_trip_duration_seconds_title">Tul tal-vjaġġ (sekondi).</string>
     <string name="pref_trip_duration_seconds_summary">In-numru ta \'sekondi għal simulazzjoni ta\' vjaġġ biex titmexxa qabel ma tintlaħaq id-destinazzjoni:</string>
 </resources>

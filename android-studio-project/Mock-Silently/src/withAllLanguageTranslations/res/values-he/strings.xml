@@ -2,10 +2,13 @@
 <resources>
     <string name="app_name">מוק סילבלי</string>
     <string name="pref_settings_title">הגדרות</string>
-    <string name="pref_purpose_array_names_1">מעמד קבוע</string>
+    <string name="pref_purpose_array_names_1">מיקום קבוע</string>
     <string name="pref_purpose_array_names_2">יעד נסיעה</string>
     <string name="pref_purpose_title">מטרה</string>
     <string name="pref_purpose_summary">לבחור מטרה..</string>
+    <string name="pref_force_start_title">התחלת כוח</string>
+    <string name="pref_force_start_summary_on" >התחלה חדשה של שירות הלעג.</string>
+    <string name="pref_force_start_summary_off">פתחו את היישום כדי להפעיל את שירות הלעג באופן ידני.</string>
     <string name="pref_trip_duration_seconds_title">משך נסיעה (שניות).</string>
     <string name="pref_trip_duration_seconds_summary">מספר השניות עבור סימולציית נסיעה להרצה לפני הגעה ליעד:</string>
 </resources>

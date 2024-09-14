@@ -3,9 +3,12 @@
     <string name="app_name">சிலை மோக்</string>
     <string name="pref_settings_title">அமைப்புகள்</string>
     <string name="pref_purpose_array_names_1">நிலையான நிலை</string>
-    <string name="pref_purpose_array_names_2">பயணம்</string>
+    <string name="pref_purpose_array_names_2">டிரிப் புள்ளிவிவரம்</string>
     <string name="pref_purpose_title">முனையம்</string>
     <string name="pref_purpose_summary">தேர்வு செய்..</string>
+    <string name="pref_force_start_title">ஆரம்பம்</string>
+    <string name="pref_force_start_summary_on" >மின்சார சேவை ஆரம்பிக்கிறது..</string>
+    <string name="pref_force_start_summary_off">மின்னஞ்சல் சேவையை கைமுறையாக ஆரம்பிப்பதற்கு பயன்பாடு.</string>
     <string name="pref_trip_duration_seconds_title">முக்கோணம் (நொடிகள்).</string>
     <string name="pref_trip_duration_seconds_summary">செல்லுபடியாகும் ஒரு பயணம் அடைவுக்கு முன் செல்லும் வினாடியின் எண்ணிக்கை:</string>
 </resources>

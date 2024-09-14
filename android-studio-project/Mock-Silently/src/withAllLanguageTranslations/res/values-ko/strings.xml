@@ -3,9 +3,12 @@
     <string name="app_name">밀크 사일런트</string>
     <string name="pref_settings_title">설정</string>
     <string name="pref_purpose_array_names_1">고정 위치</string>
-    <string name="pref_purpose_array_names_2">여행 목적지</string>
+    <string name="pref_purpose_array_names_2">트립 대상</string>
     <string name="pref_purpose_title">용도</string>
     <string name="pref_purpose_summary">목적을 택하다..</string>
+    <string name="pref_force_start_title">강제 시작</string>
+    <string name="pref_force_start_summary_on" >비웃는 서비스 시작하기.</string>
+    <string name="pref_force_start_summary_off">수동으로 서비스를 시작하려면 앱을 여십시오..</string>
     <string name="pref_trip_duration_seconds_title">트립 지속 기간 (초)).</string>
     <string name="pref_trip_duration_seconds_summary">여행 시뮬레이션이 대상에 도달하기 전에 실행되는 시간 (초):</string>
 </resources>
