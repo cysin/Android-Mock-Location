@@ -20,6 +20,7 @@ import android.os.Bundle;
 public class GeoIntentActivity extends Activity {
     private final static String EXTRA_PURPOSE               = "purpose";
     private final static String EXTRA_SILENT_UPDATE         = "silent_update";
+    private final static String EXTRA_FORCE_START           = "force_start";
     private final static String EXTRA_TRIP_DURATION_SECONDS = "trip_duration_seconds";
 
     @Override
@@ -62,8 +63,9 @@ public class GeoIntentActivity extends Activity {
         if (intent.hasExtra(EXTRA_PURPOSE)) {
             int purpose               = intent.getIntExtra(EXTRA_PURPOSE, 0);
             boolean silent_update     = intent.getBooleanExtra(EXTRA_SILENT_UPDATE, false);
+            boolean force_start       = intent.getBooleanExtra(EXTRA_FORCE_START, false);
             int trip_duration_seconds = intent.getIntExtra(EXTRA_TRIP_DURATION_SECONDS, 60);
-            handled = handleGeoDataPurpose(point, purpose, silent_update, trip_duration_seconds);
+            handled = handleGeoDataPurpose(point, purpose, silent_update, force_start, trip_duration_seconds);
         }
 
         if (!handled)
@@ -81,7 +83,7 @@ public class GeoIntentActivity extends Activity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 int purpose = which + 1;
-                boolean handled = handleGeoDataPurpose(point, purpose, false, 0);
+                boolean handled = handleGeoDataPurpose(point, purpose);
 
                 if (handled)
                   dialog.dismiss();
@@ -90,38 +92,56 @@ public class GeoIntentActivity extends Activity {
         builder.show();
     }
 
-    private boolean handleGeoDataPurpose(LocPoint point, int purpose, boolean silent_update, int trip_duration_seconds) {
+    private boolean handleGeoDataPurpose(LocPoint point, int purpose) {
+        return handleGeoDataPurpose(point, purpose, /* silent_update= */ false, /* force_start= */ false, /* trip_duration_seconds= */ 0);
+    }
+
+    private boolean handleGeoDataPurpose(LocPoint point, int purpose, boolean silent_update, boolean force_start, int trip_duration_seconds) {
+        boolean handled = false;
         switch (purpose) {
             case 1:
                 // fixed position
-                if (silent_update && LocationService.isStarted()) {
-                  LocationService.getLocationThreadManager().jumpToLocation(point);
-                  finish();
+                if (silent_update) {
+                  if (LocationService.isStarted()) {
+                    LocationService.getLocationThreadManager().jumpToLocation(point);
+                    handled = true;
+                    finish();
+                  }
+                  else if (force_start) {
+                    LocationService.doStart(getApplicationContext(), true, point, null, 0);
+                    handled = true;
+                    finish();
+                  }
                 }
-                else {
+                if (!handled) {
                   handleFixedPosition(point);
+                  handled = true;
                 }
-                return true;
+                break;
             case 2:
                 // trip origin
                 handleTripOrigin(point);
-                return true;
+                handled = true;
+                break;
             case 3:
                 // trip destination
                 if (silent_update && LocationService.isStarted()) {
                   LocationService.getLocationThreadManager().flyToLocation(point, trip_duration_seconds);
+                  handled = true;
                   finish();
                 }
                 else {
                   handleTripDestination(point);
+                  handled = true;
                 }
-                return true;
+                break;
             case 4:
                 // new bookmark
                 handleNewBookmark(point);
-                return true;
+                handled = true;
+                break;
         }
-        return false;
+        return handled;
     }
 
     private void handleFixedPosition(LocPoint point) {

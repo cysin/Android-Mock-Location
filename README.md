@@ -184,6 +184,11 @@ __other enhancements__:
     * only works in combination with:
       - `purpose` having a value of either: `1` or `3`
     * default: _FALSE_
+  - (boolean) `force_start`
+    * only works in combination with:
+      - `purpose` having a value of: `1`
+      - `silent_update` having a value of: _TRUE_
+    * default: _FALSE_
   - (integer) `trip_duration_seconds`
     * only works in combination with:
       - `purpose` having a value of: `3`

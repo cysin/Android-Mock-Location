@@ -10,8 +10,8 @@
     <string name="pref_settings_title">Settings</string>
 
     <!-- Settings: purpose -->
-    <string name="pref_purpose_array_names_1">fixed position</string>
-    <string name="pref_purpose_array_names_2">trip destination</string>
+    <string name="pref_purpose_array_names_1">Fixed Position</string>
+    <string name="pref_purpose_array_names_2">Trip Destination</string>
 
     <string translatable="false" name="pref_purpose_array_values_1">1</string>
     <string translatable="false" name="pref_purpose_array_values_2">3</string>
@@ -30,6 +30,13 @@
     <string translatable="false" name="pref_purpose_default">@string/pref_purpose_array_values_1</string>
     <string name="pref_purpose_title">Purpose</string>
     <string name="pref_purpose_summary">choose purpose..</string>
+
+    <!-- Settings: force_start -->
+    <string translatable="false" name="pref_force_start_key">pref_force_start</string>
+    <string translatable="false" name="pref_force_start_default">false</string>
+    <string name="pref_force_start_title">Force Start</string>
+    <string name="pref_force_start_summary_on" >Silently start the mocking service.</string>
+    <string name="pref_force_start_summary_off">Open the app to manually start the mocking service.</string>
 
     <!-- Settings: trip_duration_seconds -->
     <string translatable="false" name="pref_trip_duration_seconds_key">pref_trip_duration_seconds</string>

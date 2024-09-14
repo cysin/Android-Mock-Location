@@ -11,6 +11,7 @@ import android.preference.PreferenceManager;
 public class GeoIntentActivity extends Activity {
     private int purpose;
     private int trip_duration_seconds;
+    private boolean force_start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class GeoIntentActivity extends Activity {
             newIntent.putExtra("silent_update", true);
             newIntent.putExtra("purpose", purpose);
             newIntent.putExtra("trip_duration_seconds", trip_duration_seconds);
+            newIntent.putExtra("force_start", force_start);
 
             startActivity(newIntent);
         }
@@ -50,6 +52,12 @@ public class GeoIntentActivity extends Activity {
             preferences.getString(
                 getString(R.string.pref_trip_duration_seconds_key),
                 getString(R.string.pref_trip_duration_seconds_default)
+            )
+        );
+        force_start = preferences.getBoolean(
+            getString(R.string.pref_force_start_key),
+            Boolean.parseBoolean(
+                getString(R.string.pref_force_start_default)
             )
         );
     }

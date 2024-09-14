@@ -13,6 +13,13 @@
             android:entryValues="@array/pref_purpose_array_values"
             android:defaultValue="@string/pref_purpose_default" />
 
+        <CheckBoxPreference
+            android:key="@string/pref_force_start_key"
+            android:title="@string/pref_force_start_title"
+            android:summaryOn="@string/pref_force_start_summary_on"
+            android:summaryOff="@string/pref_force_start_summary_off"
+            android:defaultValue="@string/pref_force_start_default" />
+
         <EditTextPreference
             android:key="@string/pref_trip_duration_seconds_key"
             android:title="@string/pref_trip_duration_seconds_title"
