@@ -60,6 +60,7 @@ android {
         disable 'MissingTranslation'
         abortOnError true
     }
+    namespace 'com.github.warren_bank.mock_location.service.microg_nlp_backend'
 }
 
 dependencies {
